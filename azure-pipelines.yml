@@ -1,0 +1,25 @@
+# HTML
+
+# Archive your static HTML project and save it with the build record.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(build.sourcesDirectory)'
+    includeRootFolder: false
+- task: PublishBuildArtifacts@1
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'DENIS SUBS(1f6459c0-7b27-4479-ab67-bf6eb69c4a2d)'
+    appType: 'webAppLinux'
+    appName: 'colunasemdor'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
