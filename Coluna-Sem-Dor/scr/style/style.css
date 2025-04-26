@@ -1,0 +1,37 @@
+*{
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    background-color: antiquewhite;
+    display: flex;
+    margin: 0% 0% 10% 10%;
+    width: 80%;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>img{
+    margin-left: 30px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav>a{
+    display: flex;
+    justify-content: space-between;
+    color: violet;
+}
+
+.agende-header{
+    margin-right: 30px;
+}
