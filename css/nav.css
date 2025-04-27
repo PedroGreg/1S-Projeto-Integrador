@@ -6,29 +6,25 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
 header>img{
-    margin-left: 30px;
-    height: 350px;
+    height: 70px;
+    width: flex;
+    margin-left: 20px;
 }
-
 nav{
     display: flex;
     gap: 20px;
 }
-
 nav>a{
     display: flex;
     justify-content: space-between;
     color: var(--text-color);
 }
-
 .agende-header{
-    margin-right: 30px;
     background-color: var(--softbrown);
     padding: 15px;
+    margin-right: 20px;
 }
-
 .agende-header a{
     color: black;
 }
