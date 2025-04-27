@@ -1,0 +1,7 @@
+main .hero{
+    background-image: url("../images/bg-main-carrosseul-1.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
