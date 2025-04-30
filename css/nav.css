@@ -9,12 +9,13 @@ header{
 header>img{
     height: 80%;
     width: flex;
-    margin-left: 20px;
+    margin-left: 7%;
 }
 nav{
     display: flex;
     gap: 10%;
     left: 50%;
+    margin-right: 15%;
 }
 nav>a{
     display: flex;
@@ -24,9 +25,8 @@ nav>a{
 .agende-header{
     background-color: var(--softbrown);
     padding: 15px;
-    margin-right: 20px;
-    width: 337px;
+    margin-right: 7%;
 }
-.agende-header a{
-    color: black;
-}
+ .agende-header a{
+    justify-self: center;
+ }
