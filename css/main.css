@@ -1,11 +1,22 @@
 main .hero{
-    background-image: url("../images/bg-main-carrosseul-1.JPG");
+    /* background-image: url("../images/bg-main-carrosseul-1.JPG"); */
+    background-color: var(--softbrown);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 80vh;
-    justify-content: left;
     display: flex;
+}
+
+main{
+    display: grid;
+    height: 400vh;
+}
+.back{
+    background-image: url(../images/background/main.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320vh;
 }
 
 .textos-main{
@@ -14,13 +25,70 @@ main .hero{
     justify-content: left;
     height: 80vh;
     align-items: center;
-    padding: 10vh 10vh 10vh 10vh
+    padding: 10%;
 }
 .textos-main>p{
-    background-color: var(--softbrown);
+    background-color: #ADA69455;
 }
 .button{
+    display: flex;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--main);
     align-self: center;
-    justify-self: center;
+    justify-content: end;
+}
+.nossos-servicos{
+    /* background-image: url(../images/background/bg_Parte\ 1.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nossos-servicos>img{
+    margin-right: 10%;
+}
+.servicos{
+    display: grid;
+    align-content: space-between;
+    height: 80vh;
+    justify-content: left;
+    padding: 10%;
+    margin-left: 10%;
+}
+.sobre-a-clinica{
+    /* background-image: url(../images/background/bg_Parte\ 2.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.section-contato{
+    /* background-image: url(../images/background/bg_Parte\ 3.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-position-y: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+footer{
+    /* background-image: url(../images/background/bg_Parte\ 4.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }

@@ -7,13 +7,14 @@ header{
     align-items: center;
 }
 header>img{
-    height: 70px;
+    height: 80%;
     width: flex;
     margin-left: 20px;
 }
 nav{
     display: flex;
-    gap: 20px;
+    gap: 10%;
+    left: 50%;
 }
 nav>a{
     display: flex;
@@ -24,6 +25,7 @@ nav>a{
     background-color: var(--softbrown);
     padding: 15px;
     margin-right: 20px;
+    width: 337px;
 }
 .agende-header a{
     color: black;
