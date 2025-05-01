@@ -1,27 +1,41 @@
 .nossos-servicos{
     display: flex;
     width: 100%;
-    height: 80vh;
-    justify-content: space-between;
+    height: 940px;
     background-color: #D5CFBD7F;
+    justify-content: space-between;
 }
 .aside-text-ns{
-    display: flex;
     margin-left: 7%;
-    justify-self: left;
-    justify-content: left;
-    align-items: center;
+    align-self: center;
     background-color: #D5CFBD7F;
     width: 500px;
     height: 600px;
 }
-.aside-img-ns{
-    display: flex;
-    margin-right: 7%;
-    justify-self: right;
+.div-text-ns{
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: space-between;
+    margin: 50px 50px 50px 50px;
+    width: 400px;
+    height: 500px;
+}
+.aside-img-ns{
+    margin-right: 7%;
+    align-self: center;
     background-color: #D5CFBD7F;
-    width: 500px;
-    height: 600px;
+    width: 650px;
+    height: 800px;
+}
+.div-img-ns{
+    display: grid;
+    justify-content: center;
+    align-content: space-between;
+    margin: 50px 50px 50px 50px;
+    width: 400px;
+    height: 500px;
+}
+.div-img-ns img{
+    width: 350px;
+    height: 150px;
 }
