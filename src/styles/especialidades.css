@@ -1,3 +1,24 @@
-.especialidades {
-    
+.especialidades{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+.especialidades img {
+    margin: 170px;
+}
+
+.especialidades h1{
+    margin: 97 ;
+    color:#6EB7A9 ;
+    flex-direction: column;
+    padding:10px ;
+}
+
+.especialidades h3{
+    padding: 10px;
+}
+
+.especialidades li{
+    padding: 5px;
 }
