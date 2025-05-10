@@ -1,0 +1,49 @@
+header {
+    background-color: var(--green);
+    padding: 1rem 0;
+  }
+  
+  header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+  }
+  
+  .menu li a:hover {
+    opacity: 0.8;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons img {
+    height: 24px;
+    width: 24px;
+  }
+  

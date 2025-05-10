@@ -1,0 +1,32 @@
+footer {
+    background-color: var(--green);
+    color: var(--text-dark);
+    padding: 2rem 1rem;
+  }
+  
+  .footer-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footer-logo {
+    height: 60px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .whatsapp-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
