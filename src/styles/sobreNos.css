@@ -1,0 +1,24 @@
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre img{
+    height: 747px;
+    width: 747px;
+}
+
+
+.sobre h2{
+    color: #6EB7A9;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.sobre p{
+    padding: 10px;
+    margin: 10px;
+
+}
