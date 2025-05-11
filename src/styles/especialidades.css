@@ -6,19 +6,22 @@
 }
 .especialidades img {
     margin: 170px;
+    height: 700px;
 }
 
 .especialidades h1{
     margin: 97 ;
     color:#6EB7A9 ;
     flex-direction: column;
-    padding:10px ;
+    padding:1px ;
 }
 
 .especialidades h3{
-    padding: 10px;
+    padding: 1px;
 }
 
 .especialidades li{
     padding: 5px;
+    background-color: #D5CFBD;
+    margin-bottom: 10px;
 }
