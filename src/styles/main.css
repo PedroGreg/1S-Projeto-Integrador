@@ -42,3 +42,67 @@
   font-size: 30px;
   color: white;
 }
+
+/* DR ALESSANDRA */
+.especialidades {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  margin: 0 100px 5px 100px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.especialidades figure img{
+  max-width: 100%;
+  height: auto;
+    
+}
+.ale {
+  width: 100%;
+  max-width: 500px;
+}
+
+.h2 {
+    font-size: 3em;
+    margin-bottom: 24px;
+}
+
+
+/* SOBRE NOS */
+
+.sobre {
+  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  margin: 0 100px 5px 100px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.texts {
+    width: 100%;
+    max-width: 500px;
+}
+  
+.texts h2 {
+    font-size: 3em;
+    margin-bottom: 24px;
+}
+
+.fachada {
+    width: 100%;
+    max-width: 500px;
+  
+    display: flex;
+    flex-direction: column;
+}
