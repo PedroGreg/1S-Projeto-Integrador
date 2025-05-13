@@ -144,36 +144,37 @@
         atendimento integrado e de alta qualidade, adequado às necessidades de cada paciente.</p>
         </div>
       </aside>
-<div class="carousel">
-  <input type="radio" name="slides" id="slide1" checked>
-  <input type="radio" name="slides" id="slide2">
-  <input type="radio" name="slides" id="slide3">
+ <!-- Carousel adaptado -->
+ <section class="carousel" aria-label="Galeria de Imagens">
+    <ol class="carousel__viewport">
+      <li id="carousel__slide1" class="carousel__slide">
+        <img src="./src/assets/serv-1.jpeg" alt="Tratamento 1">
+      </li>
+      <li id="carousel__slide2" class="carousel__slide">
+        <img src="./src/assets/serv-2.jpeg" alt="Tratamento 2">
+      </li>
+      <li id="carousel__slide3" class="carousel__slide">
+        <img src="./src/assets/serv-3.jpeg" alt="Tratamento 3">
+      </li>
+    </ol>
 
-  <ul class="slides">
-    <li class="slide s1">
-      <img src="./src/assets/serv-1.jpeg" alt="Slide 1">
-    </li>
-    <li class="slide s2">
-      <img src="./src/assets/serv-2.jpeg" alt="Slide 2">
-    </li>
-    <li class="slide s3">
-      <img src="./src/assets/serv-3.jpeg" alt="Slide 3">
-    </li>
-  </ul>
+    <!-- SETAS FIXAS -->
+    <div class="carousel__controls">
+      <a href="#carousel__slide3" class="carousel__prev" aria-label="Anterior">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <a href="#carousel__slide2" class="carousel__next" aria-label="Próximo">
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
 
-  <!-- Setas esquerda/direita -->
-  <div class="arrows">
-    <label for="slide3" class="left"><i class="fa-solid fa-arrow-left"></i></label>
-    <label for="slide2" class="right"><i class="fa-solid fa-arrow-right"></i></label>
-  </div>
-
-  <div class="navigation">
-    <label for="slide1"></label>
-    <label for="slide2"></label>
-    <label for="slide3"></label>
-  </div>
-</div>
-
+    <!-- NAVEGAÇÃO -->
+    <aside class="carousel__navigation">
+      <a href="#carousel__slide1">•</a>
+      <a href="#carousel__slide2">•</a>
+      <a href="#carousel__slide3">•</a>
+    </aside>
+  </section>
     </section>
 
     <!-- NOSSA ESTRUTURA -->

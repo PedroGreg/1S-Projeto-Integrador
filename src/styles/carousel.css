@@ -1,94 +1,101 @@
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 700px;
-  margin: auto;
+  max-width: 500px;
+  height: 350px;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
-.slides {
-  transition: transform 0.6s ease;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 100%;
-  display: block;
-}
-
-/* Oculta os inputs */
-.carousel input[type="radio"] {
-  display: none;
-}
-
-/* Navegação (bolinhas ou botões) */
-.navigation {
+.carousel__viewport {
   position: absolute;
-  bottom: 15px;
-  width: 100%;
+  inset: 0;
   display: flex;
-  justify-content: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
-.navigation label {
-  width: 12px;
-  height: 12px;
-  margin: 0 6px;
-  border-radius: 50%;
-  background: #ccc;
-  display: inline-block;
-  cursor: pointer;
+.carousel__slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  position: relative;
 }
 
-/* Quando o input está checado, move o slide */
-#slide1:checked ~ .slides {
-  transform: translateX(0%);
+.carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
 
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
+.carousel__snapper {
+  position: relative;
+  height: 100%;
 }
 
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-/* Estilo ativo para a bolinha atual */
-#slide1:checked ~ .navigation label[for="slide1"],
-#slide2:checked ~ .navigation label[for="slide2"],
-#slide3:checked ~ .navigation label[for="slide3"] {
-  background: #555;
-}
-
-.arrows {
+.carousel__prev,
+.carousel__next {
   position: absolute;
   top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  width: 3rem;
+  height: 3rem;
   transform: translateY(-50%);
-  padding: 0 20px;
-  pointer-events: none; /* evita clique fora dos ícones */
-}
-
-.arrows label {
-  pointer-events: all;
-  font-size: 2rem;
-  color: #333;
-  background: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
-  padding: 10px;
+  text-indent: -9999px;
+  overflow: hidden;
   cursor: pointer;
-  transition: background 0.3s ease;
+  z-index: 10;
 }
 
-.arrows label:hover {
-  background: rgba(0,0,0,0.1);
+.carousel__prev::before,
+.carousel__next::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #000;
+  display: block;
+  text-align: center;
+}
+
+.carousel__prev::before {
+  content: "\f104"; /* ← */
+}
+
+.carousel__next::before {
+  content: "\f105"; /* → */
+}
+
+.carousel__prev {
+  left: 10px;
+}
+
+.carousel__next {
+  right: 10px;
+}
+
+.carousel__navigation {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel__navigation-list {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  text-indent: -9999px;
 }
