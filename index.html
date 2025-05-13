@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./src/styles/main.css" />
   <link rel="stylesheet" href="./src/styles/footer.css" />
   <link rel="stylesheet" href="./src/styles/tratamentos.css" />
+  <link rel="stylesheet" href="./src/styles/carousel.css" />
   <!-- <link rel="stylesheet" href="./src/styles/nav.css" /> -->
 
   <!-- ICONS -->
@@ -143,9 +144,36 @@
         atendimento integrado e de alta qualidade, adequado às necessidades de cada paciente.</p>
         </div>
       </aside>
-      <figure class="fachada">
-        <img src="./src/assets/clinica-fachada.jpg" alt="Foto da fachada da clínica" />
-      </figure>
+<div class="carousel">
+  <input type="radio" name="slides" id="slide1" checked>
+  <input type="radio" name="slides" id="slide2">
+  <input type="radio" name="slides" id="slide3">
+
+  <ul class="slides">
+    <li class="slide s1">
+      <img src="./src/assets/serv-1.jpeg" alt="Slide 1">
+    </li>
+    <li class="slide s2">
+      <img src="./src/assets/serv-2.jpeg" alt="Slide 2">
+    </li>
+    <li class="slide s3">
+      <img src="./src/assets/serv-3.jpeg" alt="Slide 3">
+    </li>
+  </ul>
+
+  <!-- Setas esquerda/direita -->
+  <div class="arrows">
+    <label for="slide3" class="left"><i class="fa-solid fa-arrow-left"></i></label>
+    <label for="slide2" class="right"><i class="fa-solid fa-arrow-right"></i></label>
+  </div>
+
+  <div class="navigation">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
+</div>
+
     </section>
 
     <!-- NOSSA ESTRUTURA -->
