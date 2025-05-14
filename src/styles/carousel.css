@@ -1,29 +1,34 @@
+/* Container principal */
 .carousel {
   position: relative;
   width: 100%;
   max-width: 500px;
   height: 350px;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
   border-radius: 10px;
   overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Área de visualização e rolagem controlada */
 .carousel__viewport {
-  position: absolute;
-  inset: 0;
   display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* esconde a barra de rolagem */
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
+/* Slide único */
 .carousel__slide {
   flex: 0 0 100%;
+  height: 100%;
   scroll-snap-align: center;
   position: relative;
 }
 
+/* Imagem preenchendo o slide */
 .carousel__slide img {
   width: 100%;
   height: 100%;
@@ -32,43 +37,28 @@
   border-radius: 10px;
 }
 
-.carousel__snapper {
-  position: relative;
-  height: 100%;
-}
-
+/* Setas de navegação */
 .carousel__prev,
 .carousel__next {
   position: absolute;
   top: 50%;
-  width: 3rem;
-  height: 3rem;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.8rem;
+  background-color: rgba(255,255,255,0.9);
+  color: #333;
+  padding: 0.5rem 0.7rem;
   border-radius: 50%;
-  text-indent: -9999px;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 10;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.3s ease;
 }
 
-.carousel__prev::before,
-.carousel__next::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  color: #000;
-  display: block;
-  text-align: center;
-}
-
-.carousel__prev::before {
-  content: "\f104"; /* ← */
-}
-
-.carousel__next::before {
-  content: "\f105"; /* → */
+.carousel__prev:hover,
+.carousel__next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .carousel__prev {
@@ -79,23 +69,26 @@
   right: 10px;
 }
 
+/* Navegação por bolinhas */
 .carousel__navigation {
   position: absolute;
   bottom: 10px;
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
-.carousel__navigation-list {
-  display: inline-flex;
-  gap: 0.5rem;
-}
-
-.carousel__navigation-button {
+.carousel__navigation a {
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
   background-color: #333;
   border-radius: 50%;
   text-indent: -9999px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel__navigation a:hover {
+  background-color: #777;
 }
