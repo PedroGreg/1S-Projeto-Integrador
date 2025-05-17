@@ -1,24 +1,20 @@
-
 .sobre{
-    display: flex;
-    align-items: center;
+    display:flex;
     justify-content: center;
-}
+    margin: 170px;
+    gap: 50px;
+    display: ;
 
-.sobre img{
-    height: 500px;
-    margin-right: px;
 }
-
 
 .sobre h2{
     color: #6EB7A9;
-    padding: px;
-    margin: 170px;
+    font-size: 30px;
 }
 
-
 .sobre p{
-    margin: 0;
-    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    text-align: justify;
+    white-space
 }

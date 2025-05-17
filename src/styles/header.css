@@ -1,49 +1,56 @@
-header {
-    background-color: var(--green);
-    padding: 1rem 0;
-  }
-  
-  header .container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 0 2rem;
-  }
-  
-  .logo {
-    height: 60px;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: opacity 0.3s;
-  }
-  
-  .menu li a:hover {
-    opacity: 0.8;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .social-icons img {
-    height: 24px;
-    width: 24px;
-  }
-  
+.container{
+  width: 100%;
+  height: 146px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--green);
+}
+
+.logo{
+  height: 126px;
+  width: 484px;
+  margin-left: 170px;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-self: center;
+  width: 484px;
+  gap: 36px;
+} 
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.header-social-icons{
+  width: 484px;
+  justify-content: end;
+  margin-right: 170px;
+}
+.social-icons{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: end;
+  align-self: center;
+}
+.fa-brands-fa-square-instagram{
+  height: 55px;
+  width: 55px;
+  list-style-image: url(../assets/icon-instagram.svg);
+}
+.fa-brands-fa-tiktok{
+  height: 55px;
+  width: 55px;
+  list-style-image: url(../assets/icon-tiktok.svg);
+}
+.fa-brands-square-whatsapp{
+  height: 55px;
+  width: 55px;
+  list-style-image: url(../assets/icon-whatsapp.svg);
+}
