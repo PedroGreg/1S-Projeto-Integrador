@@ -1,4 +1,10 @@
 .depoimentos {
     align-items: center;
     justify-content: center;
+
+}
+
+.depoimentos h2{
+    color: #6EB7A9;
+    text-align: center;
 }
