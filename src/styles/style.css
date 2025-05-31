@@ -6,3 +6,39 @@ header{
     align-items: center;
     background-color: var(--green);
 }
+
+header img{
+    margin-left: 7%;
+    width: 25%;
+    max-height: min-content;
+}
+
+header nav{
+    display: flex;
+    width: 25%;
+    height: 140px;
+    gap: 3%;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    color: white;
+    font-size: 1vw;
+}
+
+.div-navbar-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 140px;
+    margin-right: 7%;
+}
+.navbar-buttons{
+    width: 30%;
+    height: 90%;
+}
+.navbar-icons{
+    height: 90%;
+    width: 30%;
+}
