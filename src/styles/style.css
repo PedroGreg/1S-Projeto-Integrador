@@ -246,29 +246,126 @@ header nav a {
   display: flex;
   flex-direction: row;
   width: 100%;
-  
+
   margin: 0 100px 5px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  }
-  
-  .texts {
+}
+
+.texts {
   width: 100%;
   max-width: 500px;
-  }
-  .texts h2 {
+}
+
+.texts h2 {
   font-size: 3em;
   margin-bottom: 24px;
-  }
-  
-  .fachada {
+}
+
+.fachada {
   width: 100%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  }
-  
+}
+
+/* Container principal */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Área de visualização e rolagem controlada */
+.carousel__viewport {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* esconde a barra de rolagem */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Slide único */
+.carousel__slide {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+/* Imagem preenchendo o slide */
+.carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Setas de navegação */
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel__prev {
+  left: 10px;
+}
+
+.carousel__next {
+  right: 10px;
+}
+
+/* Navegação por bolinhas */
+.carousel__navigation {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.carousel__navigation a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #333;
+  border-radius: 50%;
+  text-indent: -9999px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel__navigation a:hover {
+  background-color: #777;
+}
+
 .depoimentos {
   display: grid;
   justify-content: center;
@@ -348,6 +445,7 @@ footer p {
   width: 25%;
   justify-content: center;
 }
+
 /* .contato {
   display: flex;
   width: 100%;
