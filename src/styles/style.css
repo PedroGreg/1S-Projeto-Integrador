@@ -243,6 +243,33 @@ header nav a {
 }
 
 .sobre-nos {
+  margin: 7%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-nos h1 {
+  color: #6cb1a1;
+  font-size: 28px;
+}
+
+.sobre-nos p {
+  text-align: justify;
+  font-size: 16px;
+  gap: 20px;
+}
+
+
+.sobre-nos .texts {
+  max-width: 600px;
+  flex: 1 1 400px;
+  line-height: 1.6;
+}
+
+
+/* .sobre-nos {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -260,7 +287,7 @@ header nav a {
 
 .texts h2 {
   font-size: 3em;
-  margin-bottom: 24px;
+  margin-bottom: 24px; */
 }
 
 .fachada {
