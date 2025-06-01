@@ -411,7 +411,7 @@ header nav a {
   color: var(--green);
 }
 
-.depoimentos a {
+.depoimentos-a {
   display: flex;
   justify-self: center;
   width: 30%;
