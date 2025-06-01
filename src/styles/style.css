@@ -1,5 +1,5 @@
-header{
-    width: 100% ;
+header {
+    width: 100%;
     display: flex;
     height: 150px;
     justify-content: space-between;
@@ -7,13 +7,12 @@ header{
     background-color: var(--green);
 }
 
-header img{
+header img {
     margin-left: 7%;
     width: 25%;
-    max-height: min-content;
 }
 
-header nav{
+header nav {
     display: flex;
     width: 25%;
     height: 140px;
@@ -21,12 +20,13 @@ header nav{
     justify-content: space-around;
     align-items: center;
 }
-header nav a{
+
+header nav a {
     color: white;
-    font-size: 1vw;
+    font-size: 20px;
 }
 
-.div-navbar-buttons{
+.div-navbar-buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,11 +34,46 @@ header nav a{
     height: 140px;
     margin-right: 7%;
 }
-.navbar-buttons{
+
+.navbar-buttons {
     width: 30%;
     height: 90%;
 }
-.navbar-icons{
+
+.navbar-icons {
     height: 90%;
     width: 30%;
 }
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: left;
+    align-items: center;
+    background-image: url(../images/bg-main-1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-aside {
+    display: grid;
+    margin-left: 7%;
+    width: 60%;
+    align-items: center;
+    justify-content: left;
+    gap: 5%;
+}
+
+.hero-aside h1 {
+    width: 80%;
+    font-size: 40px;
+    text-justify: auto;
+    color: var(--text-light);
+}
+
+.hero-aside p {
+    font-size: 30px;   
+    color: var(--text-light);
+}
+
