@@ -7,289 +7,148 @@
   <title>Coluna Sem Dor</title>
 
   <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/reset.css" />
-  <link rel="stylesheet" href="./src/styles/header.css" />
-  <link rel="stylesheet" href="./src/styles/main.css" />
-  <link rel="stylesheet" href="./src/styles/footer.css" />
-  <link rel="stylesheet" href="./src/styles/tratamentos.css" />
-  <link rel="stylesheet" href="./src/styles/carousel.css" />
-  <link rel="stylesheet" href="/src/styles/especialidades.css">
-  <link rel="stylesheet" href="/src/styles/sobreNos.css">
-  <link rel="stylesheet" href="/src/styles/contato.css">
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <!-- <link rel="stylesheet" href="./src/styles/header.css" />
+<link rel="stylesheet" href="./src/styles/main.css" />
+<link rel="stylesheet" href="./src/styles/footer.css" />
+<link rel="stylesheet" href="./src/styles/tratamentos.css" />
+<link rel="stylesheet" href="./src/styles/nav.css" /> -->
 
   <!-- ICONS -->
   <script src="https://kit.fontawesome.com/7b1b9f29c7.js" crossorigin="anonymous"></script>
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=workspace_premium" />
-
 </head>
 
 <body>
-
-  <!-- HEADER -->
   <header>
-    <div class="container">
-      <img src="./src/assets/logo.png" alt="Logo Coluna Sem Dor" class="logo" />
-      <nav class="menu">
-        <a href="#">HOME</a>
-        <a href="#">SERVIÇOS</a>
-        <a href="#">QUEM SOMOS</a>
-        <a href="#">CONTATO</a>
-      </nav>
-      <div class="header-social-icons">
-        <button class="header-images">
-          <img src="/src/assets/icon-instagram.svg" alt="">
-        </button>
-        <button class="header-images">
-          <img src="/src/assets/icon-tiktok.svg" alt="">
-        </button>
-        <button class="header-images-i">
-          <img src="/src/assets/icon-whatsapp.svg" alt="">
-        </button>
-      </div>
+    <img src="./src/images/logo.png" alt="Logo da clinica 'Coluna sem dor'">
+    <nav>
+      <a href="">HOME</a>
+      <a href="">SERVIÇOS</a>
+      <a href="">QUEM SOMOS</a>
+      <a href="">CONTATO</a>
+    </nav>
+    <div class="div-navbar-buttons">
+      <button class="navbar-buttons"><img src="./src/images/icon-instagram.svg" alt="" class="navbar-icons"></button>
+      <button class="navbar-buttons"><img src="./src/images/icon-tiktok.svg" alt="" class="navbar-icons"></button>
+      <button class="navbar-buttons"><img src="./src/images/icon-whatsapp.svg" alt="" class="navbar-icons"></button>
     </div>
   </header>
-  <main>
-    <!-- HERO / BANNER -->
-    <section class="hero">
-      <div class="hero-div">
-        <h1>Você Sofre com Dores Nas Costas, Estresse ou Lesões?</h1>
-        <p>Conheça o Método Integrado que Está Transformando a Saúde de Quem Mora em São Paulo!</p>
-        <button class="hero-button">
-          <a href="#" class="cta">Quero Alívio!</a>
-        </button>
-      </div>
-    </section>
-    <!-- TRATAMENTOS -->
-    <section class="tratamentos">
-      <aside class="tratamentos-aside-textos">
-        <h2>Tratamentos Avançados para Corpo e Mente em Equilíbrio</h2>
-        <p>Combinação de terapias que aceleram sua recuperação e melhoram sua qualidade de vida</p>
-        <ul class="tratamentos-list">
-          <li><strong>Quiropraxia:</strong> Realinhamento vertebral para alívio rápido de dores crônicas</li>
-          <li><strong>Maca de Flexo-distração:</strong> Técnica segura para hérnias e compressões</li>
-          <li><strong>Ondas de Choque:</strong> Estimula a regeneração de tecidos lesionados</li>
-          <li><strong>Fotobiomodulação:</strong> Terapia com laser para redução de inflamações</li>
-          <li><strong>Ozonioterapia:</strong> Imunidade fortalecida e ação anti-inflamatória</li>
-          <li><strong>Ultrassom Terapêutico:</strong> Tratamento profundo para lesões musculares</li>
-          <li><strong>Termografia:</strong> Diagnóstico preciso sem radiação</li>
-          <li><strong>Pilates Clínico:</strong> Força, flexibilidade e reabilitação funcional</li>
-        </ul>
-        <button class="tratamentos-button">
-          <a href="#" class="ctb">Descubra Seu Tratamento!</a>
-        </button>
-      </aside>
-      <aside class="tratamentos-aside-fotos">
-        <div class="tratamentos-foto-1">
-          <img src="./src/assets/serv-1.jpeg" alt="Tratamento 1" />
-          <img src="./src/assets/serv-2.jpeg" alt="Tratamento 2" />
-        </div>
-        <div class="tratamentos-foto-2">
-          <img src="./src/assets/serv-3.jpeg" alt="Tratamento 3" />
-        </div>
-      </aside>
-    </section>
-
-
-    <!-- DRA ALESSANDRA -->
-    <section class="especialidades">
-      <figure>
-
-        <img src="./src/assets/dra-alessandra.jpg" alt="Foto da Dra. Alessandra" />
-
-      </figure>
-
-      <aside>
-        <div class="ale">
-          <h1>Dra. Alessandra</h1>
-          <h3>Especialidades</h3>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Quiropraxia clínica</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Quiropraxia diversificada de Janse</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Quiropraxia método thompson</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Quiropraxia instrumental (TIQ)</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Terapia Crânio Sacral</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Dry needling</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Terapia de liberação muscular</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Fotobiomodulação</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Pilates clássico e Pilates Avançado</li>
-          <li><span class="material-symbols-outlined">
-              workspace_premium
-            </span>Pós-graduação em Dermatofuncional e Cosmetologia</li>
-          <ul>
-        </div>
-        </ul>
-      </aside>
-
-    </section>
-
-    <!-- SOBRE NÓS -->
-    <section class="sobre">
-      <aside>
-
-        <div class="texts">
-          <h2>Sobre nós</h2>
-          <p>A Clínica Coluna Sem Dor foi inaugurada em janeiro de 2020, com o objetivo de oferecer aos pacientes com
-            dor
-            crônica, especialmente na coluna, um espaço especializado para tratamento de qualidade e personalizado.
-            Apesar
-            do desafio inicial da pandemia, conseguimos crescer e melhorar nossas instalações, incorporando novas
-            técnicas e
-            tecnologias para melhorar os resultados.</p>
-          <p>Atualmente, contamos com a Maca de Flexodistração, que permite tração, mobilizações e manipulações
-            realizadas
-            da coluna. Além disso, oferecemos tratamentos como Quiropraxia, Ozonioterapia, Ondas de Choque, Fisioterapia
-            Regenerativa Eco Guiada e Pilates, todas as apresentações para o transtorno e reabilitação da coluna.</p>
-          <p>Nosso atendimento é conduzido pela fisioterapeuta e fundadora da clínica, Alessandra Souza, formada há 11
-            anos
-            e especializada no tratamento de coluna. O Pilates, uma das práticas mais recomendadas para quem sofre com
-            dores
-            na coluna, é aplicado pelas instrutoras especializadas Marcia Pirrozelle e Geovana Souza. Assim, oferecemos
-            um
-            atendimento integrado e de alta qualidade, adequado às necessidades de cada paciente.</p>
-        </div>
-      </aside>
-      <!-- Carousel adaptado -->
-      <section class="carousel" aria-label="Galeria de Imagens">
-        <ol class="carousel__viewport">
-          <li id="carousel__slide1" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-01.jpeg" alt="Tratamento 1">
-            <a href="#carousel__slide6" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide2" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-          <li id="carousel__slide2" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-02.jpeg" alt="Tratamento 2">
-            <a href="#carousel__slide1" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide3" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-          <li id="carousel__slide3" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-03.jpeg" alt="Tratamento 3">
-            <a href="#carousel__slide2" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide4" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-          <li id="carousel__slide4" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-04.jpeg" alt="Tratamento 4">
-            <a href="#carousel__slide3" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide5" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-          <li id="carousel__slide5" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-05.jpeg" alt="Tratamento 5">
-            <a href="#carousel__slide4" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide6" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-          <li id="carousel__slide6" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-06.jpeg" alt="Tratamento 6">
-            <a href="#carousel__slide5" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide7" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-          <li id="carousel__slide7" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-07.jpeg" alt="Tratamento 6">
-            <a href="#carousel__slide6" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide8" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-          <li id="carousel__slide8" class="carousel__slide">
-            <img src="./src/assets/galeria/ga-08.jpeg" alt="Tratamento 6">
-            <a href="#carousel__slide7" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#carousel__slide1" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
-          </li>
-        </ol>
-
-        <!-- Bolinhas de navegação -->
-        <aside class="carousel__navigation">
-          <a href="#carousel__slide1">•</a>
-          <a href="#carousel__slide2">•</a>
-          <a href="#carousel__slide3">•</a>
-          <a href="#carousel__slide4">•</a>
-          <a href="#carousel__slide5">•</a>
-          <a href="#carousel__slide6">•</a>
-          <a href="#carousel__slide7">•</a>
-          <a href="#carousel__slide8">•</a>
-        </aside>
-      </section>
-    </section>
-
-    <!-- DEPOIMENTOS -->
-    <!-- <section class="depoimentos">
-      <h2>Depoimentos de Quem Voltou a Viver Sem Dor</h2>
-      <div class="avaliacoes">
-        <img src="./src/assets/review-google.png" alt="Avaliação Google" />
-        <blockquote>
-          <p><strong>Cecília Assaf:</strong> Excelente atendimento, ótimas profissionais</p>
-        </blockquote>
-        <blockquote>
-          <p><strong>Rossana Bonfig:</strong> Atendimento maravilhoso desde o acolhimento ao Pilates.</p>
-        </blockquote>
-      </div>
-      <a href="#" class="cta">Quero Me Sentir Melhor!</a>
-    </section> -->
-    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-63ea8195-80f3-4a99-8d82-edc05e4cf097" data-elfsight-app-lazy></div>
-
-    <!-- CONTATO -->
-    <section class="contato">
-      <div class="contato-wrapper">
-        <div class="info">
-          <h2>Contato</h2>
-          <h3><strong>📞 DÚVIDAS E INFORMAÇÕES:</strong><br></h3>
-          <p>(11) 96357-1929<br>
-            oficialcolunasemdor@gmail.com
-          </p>
-          <p><strong>📍 ONDE ESTAMOS:</strong><br>
-            Rua São Benedito, 418 –<br>
-            Jardim Santo Amaro, São Paulo - SP
-          </p>
-          <p><strong>CONHEÇA E ACOMPANHE<br>A NOSSA REDES SOCIAIS:</strong></p>
-          <div class="social-icons">
-            <a href="#"><img src="./src/assets/Frame/insta.png" alt="Instagram" /></a>
-            <a href="#"><img src="./src/assets/Frame/link.png" alt="TikTok" /></a>
-            <a href="#"><img src="./src/assets/Frame/tiktok.png" alt="LinkedIn" /></a>
-          </div>
-        </div>
-        <div class="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.744781603318!2d-46.70441042462363!3d-23.64930937873949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce516b4bb5ee23%3A0x602b54d54441b2c7!2sColuna%20Sem%20Dor%20-%20Clinica%20de%20Quiropraxia%20e%20Fisioterapia!5e0!3m2!1spt-BR!2sbr!4v1747849922859!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>"
-        </div>
-      </div>
-    </section>
-
+  <main class="hero">
+    <aside class="hero-aside">
+      <h1>Você Sofre com Dores Nas Costas, Estresse ou Lesões?</h1>
+      <p>Conheça o Método Integrado que Está Transformando a Saúde de Quem Mora em São Paulo!</p>
+      <button><a href="">Quero Alívio Agora!</a></button>
+    </aside>
   </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-wrapper">
-      <img src="./src/assets/logo.png" alt="Logo Coluna Sem Dor" class="footer-logo" />
-      <p>© Coluna sem dor, 2025 Todos os direitos reservados</p>
-      <a href="https://wa.me/5511963571929" target="_blank">
-        <img src="./src/assets/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon" />
-      </a>
+  <section class="tratamentos">
+    <aside class="tratamentos-aside">
+      <h1>Tratamentos Avançados para Corpo e Mente em Equilíbrio</h1>
+      <h2>Combinação de terapias que aceleram sua recuperação e melhoram sua qualidade de vida</h2>
+      <ul class="tratamentos-ul">
+        <li class="tratamentos-li"><span class="tratamentos-span">Quiropraxia:</span> Realinhamento vertebral para
+          alívio rápido de dores crônicas</li>
+        <li class="tratamentos-li"><span class="tratamentos-span">Maca de Flexo-distração:</span> Técnica segura para
+          hérnias e compressões</li>
+        <li class="tratamentos-li"><span class="tratamentos-span">Ondas de Choque:</span> Estimula a regeneração de
+          tecidos lesionados</li>
+        <li class="tratamentos-li"><span class="tratamentos-span">Fotobiomodulação:</span> Terapia com laser para
+          redução de inflamações</li>
+        <li class="tratamentos-li"><span class="tratamentos-span">Ozonioterapia:</span> Imunidade fortalecida e ação
+          anti-inflamatória</li>
+        <li class="tratamentos-li"><span class="tratamentos-span">Ultrassom Terapêutico:</span> Tratamento profundo para
+          lesões musculares</li>
+        <li class="tratamentos-li"><span class="tratamentos-span">Termografia:</span> Diagnóstico preciso sem radiação
+        </li>
+        <li class="tratamentos-li"><span class="tratamentos-span">Pilates Clínico:</span> Força, flexibilidade e
+          reabilitação funcional</li>
+      </ul>
+      <a href="">Descubra Seu Tratamento!</a>
+    </aside>
+    <div class="tratamentos-images">
+      <img src="./src/images/serv-1.jpeg" alt="" class="tratamentos-photos">
+      <div class="tratamentos-images-center">
+        <img src="./src/images/serv-2.jpeg" alt="" class="tratamentos-photos">
+        <img src="./src/images/serv-3.jpeg" alt="" class="tratamentos-photos">
+      </div>
     </div>
+  </section>
+  <section class="dra-alessandra">
+    <img src="" alt="">
+    <aside>
+      <h1>Dra. Alessandra</h1>
+      <h2>Especialidades</h2>
+      <ul class="list">
+        <li class="list-item"><img src="../colunasemdor/src/images/icon-tiktok.svg" alt="" class="list-img">Quiropraxia
+          clínica</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Quiropraxia diversificada de Janse</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Quiropraxia método thompson</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Quiropraxia instrumental (TIQ)</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Quiropraxia clínica</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Terapia Crânio Sacral</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Dry needling </li>
+        <li class="list-item"><img src="." alt="" class="list-img">Terapia de liberação muscular</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Fotobiomodulacao</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Pilates clássico e Pilates Avançado</li>
+        <li class="list-item"><img src="." alt="" class="list-img">Pós graduação em Dermatofuncional e Cosmetologia</li>
+      </ul>
+    </aside>
+  </section>
+  <section class="sobre-nos">
+    <aside>
+      <h1>Sobre nós</h1>
+      <p>A Clínica Coluna Sem Dor foi inaugurada em janeiro de 2020, com o objetivo de oferecer aos pacientes com dor
+        crônica, especialmente na coluna, um espaço especializado para tratamento de qualidade e personalizado. Apesar
+        do desafio inicial da pandemia, conseguimos crescer e melhorar nossas instalações, incorporando novas técnicas e
+        tecnologias para melhorar os resultados.<br>
+        Atualmente, contamos com a Maca de Flexodistração, que permite tração, mobilizações e manipulações realizadas da
+        coluna. Além disso, oferecemos tratamentos como Quiropraxia, Ozonioterapia, Ondas de Choque, Fisioterapia
+        Regenerativa Eco Guiada e Pilates, todas as apresentações para o transtorno e reabilitação da coluna.<br>
+        Nosso atendimento é conduzido pela fisioterapeuta e fundadora da clínica, Alessandra Souza, formada há 11 anos e
+        especializada no tratamento de coluna. O Pilates, uma das práticas mais recomendadas para quem sofre com dores
+        na coluna, é aplicado pelas instrutoras especializadas Marcia Pirrozelle e Geovana Souza. Assim, oferecemos um
+        atendimento integrado e de alta qualidade, adequado às necessidades de cada paciente.</p>
+    </aside>
+    <img src="" alt="">
+  </section>
+  <section class="depoimentos">
+    <h1>Depoimentos de Quem Voltou a Viver Sem Dor</h1>
+    <div class="depoimento-area"></div>
+    <button><a href="">Quero Me Sentir Melhor!</a></button>
+  </section>
+  <section class="contato">
+    <aside>
+      <h1>Contato</h1>
+      <div class="contato-text">
+        <img src="" alt="">
+        <p>DÚVIDAS E INFORMAÇÕES:<br>
+          (11) 96357-1929<br>
+          oficialcolunasemdor@gmail.com</p>
+      </div>
+      <div class="contato-text">
+        <img src="" alt="">
+        <p>ONDE ESTAMOS:<br>
+          Rua São Benedito, 418 - Jardim Santo Amaro, São Paulo - SP</p>
+      </div>
+      <div class="contato-text">
+        <img src="" alt="">
+        <p>CONHEÇA E ACOMPANHE<br>
+          A NOSSA REDES SOCIAIS</p>
+      </div>
+      <button><img src="./src/images/icon-instagram.svg" alt=""></button>
+      <button><img src="./src/images/icon-tiktok.svg" alt=""></button>
+      <button><img src="./src/images/icon-whatsapp.svg" alt=""></button>
+    </aside>
+  </section>
+  <footer>
+    <img src="./src/images/logo.png" alt="">
+    <p>©Coluna sem dor, 2025 Todos os direitos reservados</p>
+    <img src="./src/images/icon-whatsapp.svg" alt="">
   </footer>
-
 </body>
-
-</html>
