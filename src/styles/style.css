@@ -214,10 +214,88 @@ header nav a {
 
 }
 
-.list-img {
+.list-img{}
 
+.sobre-nos{
+    margin: 7%;
+    display:flex;
+    align-items: center;
 }
 
+.sobre h1{
+    color: #6EB7A9;
+    font-size: 30px;
+}
+
+.sobre p{
+    text-align: center;
+    text-align: justify;
+}
+
+.contato{
+    margin: 7%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.contato h1{
+    color: #6EB7A9;
+    font-size: 30px;
+}
+
+.contato-text {
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px; 
+  margin-bottom: 20px; 
+}
+
+.contato-text img {
+  width: 24px; 
+  height: auto;
+}
+
+.contato-buttons{
+  margin: 7%;
+}
+
+.contato-buttons img{
+  width: 30px;
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--text-dark);
+    padding: 2rem 1rem;
+  }
+  
+  .footer-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footer-logo {
+    height: 60px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .whatsapp-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
 /* Responsividade para tablets (até 1024px) */
 @media (max-width: 1024px) {
   header {
