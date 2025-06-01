@@ -180,12 +180,42 @@ header nav a {
 
 .dra-alessandra {
   display: flex;
+  height: 800px;
+  justify-content: center;
   width: 100%;
-  
+}
+.dra-alessandra-image {
+  margin-left: 7%;
+}
+ .dra-alessandra-aside {
+  display: grid;
+  margin-right: 7%;
+  width: 90%;
+ }
+
+.dra-alessandra h1 {
+  font-size: 60px;
+  color: var(--green);
+  font-weight: bold;
+}
+.dra-alessandra h2{
+  font-size: 30px;
+  color: var(--text-dark);
+}
+.list {
+  gap: 10px;
+  list-style: none;
 }
 
 .list-item {
-  display: flex;
+  width: 100%;
+
+  background-color: var(--doricWhite);
+
+}
+
+.list-img {
+
 }
 
 /* Responsividade para tablets (até 1024px) */
