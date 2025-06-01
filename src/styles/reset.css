@@ -10,6 +10,7 @@
     --highlight: #008060;
   }
    * {
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -17,4 +18,5 @@
     text-decoration: none;
     background: none;
     border: none;
+    list-style: none;
   }
