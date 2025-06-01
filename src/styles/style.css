@@ -5,47 +5,47 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--green);
-  }
-  
-  header img {
+}
+
+header img {
   margin-left: 7%;
   width: 25%;
-  }
-  
-  header nav {
+}
+
+header nav {
   display: flex;
   width: 25%;
   height: 140px;
   gap: 3%;
   justify-content: space-around;
   align-items: center;
-  }
-  
-  header nav a {
+}
+
+header nav a {
   color: white;
   font-size: 20px;
-  }
-  
-  .div-navbar-buttons {
+}
+
+.div-navbar-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 25%;
   height: 140px;
   margin-right: 7%;
-  }
-  
-  .navbar-buttons {
+}
+
+.navbar-buttons {
   width: 30%;
   height: 90%;
-  }
-  
-  .navbar-icons {
+}
+
+.navbar-icons {
   height: 90%;
   width: 30%;
-  }
-  
-  .hero {
+}
+
+.hero {
   display: flex;
   width: 100%;
   height: 800px;
@@ -54,33 +54,33 @@ header {
   background-image: url(../images/bg-main-1.JPG);
   background-repeat: no-repeat;
   background-size: cover;
-  }
-  
-  .hero-aside {
+}
+
+.hero-aside {
   display: grid;
   margin-left: 7%;
   width: 60%;
   align-items: center;
   justify-content: left;
   gap: 5%;
-  }
-  
-  .hero-aside h1 {
+}
+
+.hero-aside h1 {
   width: 80%;
   font-weight: bold;
   font-size: 40px;
   text-justify: auto;
   text-shadow: 1px 1px 1px black, 1px 1px 1px black;
   color: var(--text-light);
-  }
-  
-  .hero-aside p {
+}
+
+.hero-aside p {
   font-size: 30px;
-  text-shadow: 1px 1px 1px black, 1px 1px 1px black; 
+  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
   color: var(--text-light);
-  }
-  
-  .hero-aside a {
+}
+
+.hero-aside a {
   display: flex;
   width: 30%;
   height: 90px;
@@ -92,47 +92,48 @@ header {
   text-shadow: 1px 1px 1px black, 1px 1px 1px black;
   background-color: var(--green);
   border-radius: 10px;
-  }
-  
-  .tratamentos {
+}
+
+.tratamentos {
   display: flex;
   width: 100%;
   height: 800px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--doricWhite);
-  }
-  
-  .tratamentos-aside {
+}
+
+.tratamentos-aside {
   display: grid;
   margin-left: 7%;
+  margin-bottom: 7%;
   width: 45%;
   align-items: center;
   justify-content: left;
   gap: 5%;
-  }
-  
-  .tratamentos-aside h1 {
+}
+
+.tratamentos-aside h1 {
   font-size: 45px;
   font-weight: bold;
   color: var(--green);
-  }
-  
-  .tratamentos-aside h2 {
+}
+
+.tratamentos-aside h2 {
   font-size: 25px;
   color: var(--text-dark);
   font-weight: normal;
-  }
-  
-  .tratamentos-li {
+}
+
+.tratamentos-li {
   font-size: 20px;
-  }
-  
-  .tratamentos-span {
+}
+
+.tratamentos-span {
   font-weight: bold;
-  }
-  
-  .tratamentos-aside a {
+}
+
+.tratamentos-aside a {
   display: flex;
   width: 40%;
   height: 60px;
@@ -143,18 +144,40 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  }
-  
-  .tratamentos-images {
+}
+
+.tratamentos-images {
   width: 40%;
+  gap: 5%;
+  margin-right: 7%;
   display: flex;
-  }
-  
-  .tratamentos-photos {
-  width: 25%;
-  }
-  
-  .list-item {
+  justify-content: center;
+}
+
+.tratamentos-images-left {
+  display: grid;
+  align-items: center;
+  width: 30%;
+}
+
+.tratamentos-images-center {
+  display: grid;
+  gap: 5%;
+  width: 30%;
+}
+
+.tratamentos-images-right {
+  display: grid;
+  align-items: center;
+  width: 30%;
+}
+
+
+.tratamentos-photos {
+  width: 100%;
+  border-radius: 60px;
+}
+
+.list-item {
   display: flex;
-  }
-  
+}
