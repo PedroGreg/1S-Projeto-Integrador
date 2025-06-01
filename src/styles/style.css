@@ -178,6 +178,131 @@ header nav a {
   border-radius: 60px;
 }
 
+.dra-alessandra {
+  display: flex;
+  width: 100%;
+  
+}
+
 .list-item {
   display: flex;
+}
+
+/* Responsividade para tablets (até 1024px) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  header img {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  header nav,
+  .div-navbar-buttons {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-aside {
+    width: 90%;
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-aside h1,
+  .hero-aside p,
+  .hero-aside a {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .tratamentos {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .tratamentos-aside,
+  .tratamentos-images {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .tratamentos-images {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .tratamentos-images-left,
+  .tratamentos-images-center,
+  .tratamentos-images-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tratamentos-photos {
+    width: 80%;
+    border-radius: 30px;
+  }
+
+  .tratamentos-aside a {
+    width: 60%;
+  }
+}
+
+/* Responsividade para celulares (até 768px) */
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 16px;
+  }
+
+  .hero-aside h1 {
+    font-size: 28px;
+  }
+
+  .hero-aside p {
+    font-size: 20px;
+  }
+
+  .hero-aside a {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .tratamentos-aside h1 {
+    font-size: 32px;
+  }
+
+  .tratamentos-aside h2,
+  .tratamentos-li {
+    font-size: 18px;
+  }
+
+  .tratamentos-aside a {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .navbar-buttons,
+  .navbar-icons {
+    width: 40%;
+    height: 70px;
+  }
 }
