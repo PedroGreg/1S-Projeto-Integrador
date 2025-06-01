@@ -32,7 +32,6 @@ header nav a {
   justify-content: center;
   width: 25%;
   height: 140px;
-  margin-right: 7%;
 }
 
 .navbar-buttons {
@@ -100,7 +99,7 @@ header nav a {
   height: 1000px;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--doricWhite);
+  background-color: #D9D9D966;
 }
 
 .tratamentos-aside {
@@ -186,6 +185,7 @@ header nav a {
   align-items: center;
   gap: 10%;
   width: 100%;
+  background-color: #D9D9D999;
 }
 
 .dra-alessandra-image {
@@ -243,11 +243,13 @@ header nav a {
 }
 
 .sobre-nos {
-  margin: 7%;
+  /* margin: 7%; */
   display: flex;
+  width: 100%;
   gap: 40px;
   justify-content: center;
   align-items: center;
+  background-color: #D9D9D9CC;
 }
 
 .sobre-nos h1 {
@@ -263,6 +265,7 @@ header nav a {
 
 
 .sobre-nos .texts {
+  margin: 7%;
   max-width: 600px;
   flex: 1 1 400px;
   line-height: 1.6;
@@ -395,7 +398,11 @@ header nav a {
 
 .depoimentos {
   display: grid;
+  width: 100%;
+  height: 800px;
   justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9FF;
 }
 
 .depoimentos h1 {
@@ -474,12 +481,16 @@ footer p {
   }
 
   .contato{
-    margin: 7%;
+    /* margin: 7%; */
     display: flex;
     align-items: center;
     gap: 100px;
+    background-color: #d9d9d9cc;
 }
 
+.contato aside, iframe{
+  margin: 7%;
+}
 .contato h1{
     color: #6EB7A9;
     font-size: 30px;
