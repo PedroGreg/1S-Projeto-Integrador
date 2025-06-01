@@ -1,0 +1,338 @@
+header {
+  width: 100%;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+}
+
+header img {
+  margin-left: 7%;
+  width: 25%;
+}
+
+header nav {
+  display: flex;
+  width: 25%;
+  height: 140px;
+  gap: 3%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  font-size: 20px;
+}
+
+.div-navbar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  height: 140px;
+  margin-right: 7%;
+}
+
+.navbar-buttons {
+  width: 30%;
+  height: 90%;
+}
+
+.navbar-icons {
+  height: 90%;
+  width: 30%;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../images/bg-main-1.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-aside {
+  display: grid;
+  margin-left: 7%;
+  width: 60%;
+  align-items: center;
+  justify-content: left;
+  gap: 5%;
+}
+
+.hero-aside h1 {
+  width: 80%;
+  font-weight: bold;
+  font-size: 40px;
+  text-justify: auto;
+  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+  color: var(--text-light);
+}
+
+.hero-aside p {
+  font-size: 30px;
+  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+  color: var(--text-light);
+}
+
+.hero-aside a {
+  display: flex;
+  width: 30%;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: bold; */
+  font-size: 30px;
+  color: var(--text-light);
+  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+  background-color: var(--green);
+  border-radius: 10px;
+}
+
+.tratamentos {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--doricWhite);
+}
+
+.tratamentos-aside {
+  display: grid;
+  margin-left: 7%;
+  margin-bottom: 7%;
+  width: 45%;
+  align-items: center;
+  justify-content: left;
+  gap: 5%;
+}
+
+.tratamentos-aside h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--green);
+}
+
+.tratamentos-aside h2 {
+  font-size: 25px;
+  color: var(--text-dark);
+  font-weight: normal;
+}
+
+.tratamentos-li {
+  font-size: 20px;
+}
+
+.tratamentos-span {
+  font-weight: bold;
+}
+
+.tratamentos-aside a {
+  display: flex;
+  width: 40%;
+  height: 60px;
+  font-size: 20px;
+  color: var(--text-light);
+  background-color: var(--green);
+  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.tratamentos-images {
+  width: 40%;
+  gap: 5%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: center;
+}
+
+.tratamentos-images-left {
+  display: grid;
+  align-items: center;
+  width: 30%;
+}
+
+.tratamentos-images-center {
+  display: grid;
+  gap: 5%;
+  width: 30%;
+}
+
+.tratamentos-images-right {
+  display: grid;
+  align-items: center;
+  width: 30%;
+}
+
+
+.tratamentos-photos {
+  width: 100%;
+  border-radius: 60px;
+}
+
+.dra-alessandra {
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  width: 100%;
+}
+.dra-alessandra-image {
+  margin-left: 7%;
+}
+ .dra-alessandra-aside {
+  display: grid;
+  margin-right: 7%;
+  width: 90%;
+ }
+
+.dra-alessandra h1 {
+  font-size: 60px;
+  color: var(--green);
+  font-weight: bold;
+}
+.dra-alessandra h2{
+  font-size: 30px;
+  color: var(--text-dark);
+}
+.list {
+  gap: 10px;
+  list-style: none;
+}
+
+.list-item {
+  width: 100%;
+
+  background-color: var(--doricWhite);
+
+}
+
+.list-img {
+
+}
+
+/* Responsividade para tablets (até 1024px) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  header img {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  header nav,
+  .div-navbar-buttons {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-aside {
+    width: 90%;
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-aside h1,
+  .hero-aside p,
+  .hero-aside a {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .tratamentos {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .tratamentos-aside,
+  .tratamentos-images {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .tratamentos-images {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .tratamentos-images-left,
+  .tratamentos-images-center,
+  .tratamentos-images-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tratamentos-photos {
+    width: 80%;
+    border-radius: 30px;
+  }
+
+  .tratamentos-aside a {
+    width: 60%;
+  }
+}
+
+/* Responsividade para celulares (até 768px) */
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 16px;
+  }
+
+  .hero-aside h1 {
+    font-size: 28px;
+  }
+
+  .hero-aside p {
+    font-size: 20px;
+  }
+
+  .hero-aside a {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .tratamentos-aside h1 {
+    font-size: 32px;
+  }
+
+  .tratamentos-aside h2,
+  .tratamentos-li {
+    font-size: 18px;
+  }
+
+  .tratamentos-aside a {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .navbar-buttons,
+  .navbar-icons {
+    width: 40%;
+    height: 70px;
+  }
+}

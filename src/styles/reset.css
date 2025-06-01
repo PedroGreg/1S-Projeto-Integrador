@@ -1,22 +1,22 @@
 /* Reset básico e variáveis globais */
 
 :root {
-    --green: #6EB7A9;
-    --doricWhite: #D5CFBD;
-    --sand: #ADA694;
-    --white: #eee;
-    --text-dark: #222;
-    --text-light: #fff;
-    --highlight: #008060;
-  }
-   * {
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    background: none;
-    border: none;
-    list-style: none;
-  }
+  --green: #6EB7A9;
+  --doricWhite: #D5CFBD;
+  --sand: #ADA694;
+  --white: #eee;
+  --text-dark: #222;
+  --text-light: #fff;
+  --highlight: #008060;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: none;
+  border: none;
+  list-style: none;
+}
