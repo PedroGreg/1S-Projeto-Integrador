@@ -35,9 +35,12 @@
       <a href="">CONTATO</a>
     </nav>
     <div class="div-navbar-buttons">
-      <button class="navbar-buttons"><img src="./src/images/icon-instagram.svg" alt="" class="navbar-icons"></button>
-      <button class="navbar-buttons"><img src="./src/images/icon-tiktok.svg" alt="" class="navbar-icons"></button>
-      <button class="navbar-buttons"><img src="./src/images/icon-whatsapp.svg" alt="" class="navbar-icons"></button>
+      <a href="https://www.instagram.com/colunasemdoroficial/" class="navbar-buttons"><img
+          src="./src/images/icon-instagram.svg" alt="" class="navbar-icons"></a>
+      <a href="https://www.tiktok.com/@colunasemdoroficial" class="navbar-buttons"><img
+          src="./src/images/icon-tiktok.svg" alt="" class="navbar-icons"></a>
+      <a href="https://wa.me/5511963571929" target="_blank" class="navbar-buttons"><img
+          src="./src/images/icon-whatsapp.svg" alt="" class="navbar-icons"></a>
     </div>
   </header>
   <main class="hero">
@@ -105,7 +108,7 @@
     </aside>
   </section>
   <section class="sobre-nos">
-    <aside>
+    <aside class="texts">
       <h1>Sobre nós</h1>
       <p>A Clínica Coluna Sem Dor foi inaugurada em janeiro de 2020, com o objetivo de oferecer aos pacientes com dor
         crônica, especialmente na coluna, um espaço especializado para tratamento de qualidade e personalizado. Apesar
@@ -119,7 +122,50 @@
         na coluna, é aplicado pelas instrutoras especializadas Marcia Pirrozelle e Geovana Souza. Assim, oferecemos um
         atendimento integrado e de alta qualidade, adequado às necessidades de cada paciente.</p>
     </aside>
-    <img src="" alt="">
+    <div class="carousel" aria-label="Galeria de Imagens">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" class="carousel__slide">
+          <img src="./src/images/galeria/ga-01.jpeg" alt="Tratamento 1">
+          <a href="#carousel__slide6" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide2" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li id="carousel__slide2" class="carousel__slide">
+          <img src="./src/images/galeria/ga-02.jpeg" alt="Tratamento 2">
+          <a href="#carousel__slide1" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide3" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li id="carousel__slide3" class="carousel__slide">
+          <img src="./src/images/galeria/ga-03.jpeg" alt="Tratamento 3">
+          <a href="#carousel__slide2" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide4" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li id="carousel__slide4" class="carousel__slide">
+          <img src="./src/images/galeria/ga-04.jpeg" alt="Tratamento 4">
+          <a href="#carousel__slide3" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide5" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li id="carousel__slide5" class="carousel__slide">
+          <img src="./src/images/galeria/ga-05.jpeg" alt="Tratamento 5">
+          <a href="#carousel__slide4" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide6" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li id="carousel__slide6" class="carousel__slide">
+          <img src="./src/images/galeria/ga-06.jpeg" alt="Tratamento 6">
+          <a href="#carousel__slide5" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide7" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li id="carousel__slide7" class="carousel__slide">
+          <img src="./src/images/galeria/ga-07.jpeg" alt="Tratamento 7">
+          <a href="#carousel__slide6" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide8" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+        <li id="carousel__slide8" class="carousel__slide">
+          <img src="./src/images/galeria/ga-08.jpeg" alt="Tratamento 6">
+          <a href="#carousel__slide7" class="carousel__prev"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="#carousel__slide1" class="carousel__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+      </ol>
+    </div>
   </section>
   <section class="depoimentos">
     <h1>Depoimentos de Quem Voltou a Viver Sem Dor</h1>
@@ -147,11 +193,11 @@
         <p>CONHEÇA E ACOMPANHE<br>
           A NOSSA REDES SOCIAIS</p>
       </div>
-       <div class = "contato-buttons">
-        <button><img src="/src/images/insta.svg" alt="" href="https://www.instagram.com/colunasemdoroficial/"></button>
-        <button><img src="/src/images/TikTok.svg" alt="" href="https://www.tiktok.com/@colunasemdoroficial"></button>
-        <button><img src="/src/images/Link.svg" alt=""></button>
-      </div>
+      <a href="https://www.instagram.com/colunasemdoroficial/" class="contato-button"><img
+          src="./src/images/icon-instagram-black.svg" alt=""></a>
+      <a href="https://www.tiktok.com/@colunasemdoroficial" class="contato-button"><img
+          src="./src/images/icon-tiktok-black.svg" alt=""></a>
+      <a href="" class="contato-button"><img src="./src/images/icon-linkedin-black.svg" alt=""></a>
     </aside>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14610.384943400844!2d-46.6801928!3d-23.7261086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce516b4bb5ee23%3A0x602b54d54441b2c7!2sColuna%20Sem%20Dor%20-%20Clinica%20de%20Quiropraxia%20e%20Fisioterapia!5e0!3m2!1spt-BR!2sbr!4v1748795553395!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
@@ -165,7 +211,7 @@
       </div>
       <div class="footer-whatsapp">
         <a href="https://wa.me/5511963571929" target="_blank">
-          <img src="./src/images/icon-whatsapp-black.svg" alt="WhatsApp" class="whatsapp-icon" />
+          <img src="./src/images/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon" />
         </a>
       </div>
     </div>
