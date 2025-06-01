@@ -9,7 +9,7 @@ header {
 
 header img {
   margin-left: 7%;
-  width: 25%;
+  width: 20%;
 }
 
 header nav {
@@ -29,20 +29,20 @@ header nav a {
 .div-navbar-buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 25%;
   height: 140px;
   margin-right: 7%;
 }
 
 .navbar-buttons {
-  width: 30%;
+  width: 15%;
   height: 90%;
 }
 
 .navbar-icons {
   height: 90%;
-  width: 30%;
+  width: 60%;
 }
 
 .hero {
@@ -127,6 +127,7 @@ header nav a {
 
 .tratamentos-li {
   font-size: 20px;
+  list-style: none;
 }
 
 .tratamentos-span {
@@ -180,123 +181,177 @@ header nav a {
 
 .dra-alessandra {
   display: flex;
-  height: 800px;
-  justify-content: center;
+  height: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
   width: 100%;
 }
+
 .dra-alessandra-image {
   margin-left: 7%;
+  object-fit: fill;
+  width: 40%;
+  height: 80%;
+  max-height: 700px;
 }
- .dra-alessandra-aside {
+
+.dra-alessandra-aside {
   display: grid;
-  margin-right: 7%;
   width: 90%;
- }
+  height: 850px;
+  margin-right: 7%;
+}
 
 .dra-alessandra h1 {
   font-size: 60px;
   color: var(--green);
   font-weight: bold;
 }
-.dra-alessandra h2{
+
+.dra-alessandra h2 {
   font-size: 30px;
   color: var(--text-dark);
 }
+
 .list {
-  gap: 10px;
+  list-style-image: url(../images/workspace_premium.svg);
+  list-style-position: inside;
   list-style: none;
 }
 
 .list-item {
-  width: 100%;
-
-  background-color: var(--doricWhite);
-
-}
-
-.list-img{}
-
-.sobre-nos{
-    margin: 7%;
-    display:flex;
-    align-items: center;
-}
-
-.sobre h1{
-    color: #6EB7A9;
-    font-size: 30px;
-}
-
-.sobre p{
-    text-align: center;
-    text-align: justify;
-}
-
-.contato{
-    margin: 7%;
-    display: flex;
-    align-items: center;
-    gap: 100px;
-}
-
-.contato h1{
-    color: #6EB7A9;
-    font-size: 30px;
-}
-
-.contato-text {
   display: flex;
-  align-items: flex-start; 
-  gap: 10px; 
-  margin-bottom: 20px; 
+  width: 100%;
+  height: 55px;
+  margin: 1%;
+  padding: 1%;
+  align-items: center;
+  color: var(--text-dark);
+  font-size: 25px;
+  background-color: var(--doricWhite);
+  text-size-adjust: auto;
+  text-align: left;
 }
 
-.contato-text img {
-  width: 24px; 
-  height: auto;
+.list-image {
+  width: 50px;
+  height: 90%;
+  background-image: url(../images/workspace_premium.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.contato-buttons{
-  margin: 7%;
+.depoimentos {
+  display: grid;
+  justify-content: center;
 }
 
-.contato-buttons img{
-  width: 30px;
+.depoimentos h1 {
+  font-size: 60px;
+  /* font-weight: bold; */
+  color: var(--green);
+}
+
+.depoimentos a {
+  display: flex;
+  justify-self: center;
+  width: 30%;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: bold; */
+  font-size: 30px;
+  color: var(--text-light);
+  text-shadow: 1px 1px 1px #00000033, 1px 1px 1px #00000033;
+  background-color: var(--green);
+  border-radius: 10px;
 }
 
 footer {
-    background-color: var(--green);
-    color: var(--text-dark);
-    padding: 2rem 1rem;
-  }
-  
-  .footer-wrapper {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .footer-logo {
-    height: 60px;
-  }
-  
-  footer p {
-    font-size: 0.9rem;
-    margin: 0;
-    flex: 1;
-    text-align: center;
-  }
-  
-  .whatsapp-icon {
-    width: 40px;
-    height: 40px;
-  }
-  
-/* Responsividade para tablets (até 1024px) */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--green);
+  color: var(--text-dark);
+  padding: 2rem 1rem;
+}
+
+.footer-wrapper {
+  /* max-width: 1100px; */
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 60px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-image {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.footer-text {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}
+
+.footer-whatsapp {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+/* .contato {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+.contato-aside {
+  width: 90%;
+  height: auto;
+  margin-left: 7%;
+}
+
+.contato-aside h1 {
+  font-size: 60px;
+  color: var(--green);
+  font-weight: normal;
+}
+
+.contato-text{
+  display: flex;
+  font-size: 25px;
+  margin: 3%;
+}
+.contato-button{
+  margin-left: 2%;
+}
+iframe {
+  margin-right: 7%;
+} */
+/* Responsividade para tablets (até 1024px) 
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
@@ -375,7 +430,7 @@ footer {
   }
 }
 
-/* Responsividade para celulares (até 768px) */
+ Responsividade para celulares (até 768px) 
 @media (max-width: 768px) {
   header nav a {
     font-size: 16px;
