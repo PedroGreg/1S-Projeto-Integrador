@@ -1,0 +1,7 @@
+@media (min-width: 370px) and (max-width: 757px)
+{
+    header{
+        width: 100%;
+        height: auto;
+    }
+}
