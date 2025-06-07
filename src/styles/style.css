@@ -178,3 +178,19 @@ header nav {
   display: flex;
   padding: 60px 100px 60px 100px;
 }
+#texts{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: left;
+  align-items: center;
+}
+#texts h1{
+  font-size: var(--title-size);
+  color: var(--green);
+}
+#texts p{
+  font-size: 30px;
+  color: black;
+  text-justify: distribute;
+}
