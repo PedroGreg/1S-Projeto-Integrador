@@ -53,10 +53,13 @@ header nav {
 #hero-aside {
   display: grid;
   gap: 20px;
-  max-width: 50%;
+  width: 50%;
+  max-width: 100%;
   margin: 200px 0px 200px 100px;
 }
-
+#hero-section{
+  display: none;
+}
 #hero-aside h1,
 p,
 a {

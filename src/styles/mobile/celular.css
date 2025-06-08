@@ -186,7 +186,7 @@
     }
 
     #dra-alessandra-image {
-        width: 80%;
+        width: 50%;
         height: auto;
         border-radius: 20px;
     }
@@ -248,7 +248,7 @@
     #texts {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: .1rem;
         justify-content: center;
         align-items: start;
     }
@@ -360,16 +360,16 @@
     }
 
     #depoimentos {
-        display: flex;
+        display: block;
         padding: 1rem;
         gap: 50px;
-        flex-direction: column;
+        text-align: center;
         justify-content: center;
         align-items: center;
     }
 
     #depoimentos h1 {
-        text-justify: auto;
+        text-align: center;
         font-size: 25px;
         color: var(--green);
     }
@@ -380,6 +380,7 @@
         height: 90px;
         background-color: var(--green);
         justify-content: center;
+        justify-self: center;
         align-items: center;
         color: var(--text-light);
         font-size: 25px;
